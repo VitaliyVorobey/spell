@@ -1028,6 +1028,128 @@ span.rs {
     }
 }
 
+.prod_list {
+    padding-top: 20px;
+    .product_la {
+        float: left;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        .f_hover {
+            position: relative;
+            width: 100%;
+            display: block;
+            text-decoration:none;
+            height:320px;
+            .wrap_img {
+                height: 200px;
+                line-height: 200px;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                }
+            }
+            .desc {                
+                .title {
+                    font-size:14px;
+                    text-decoration:none;
+                    line-height:18px;
+                    margin-bottom:10px;
+                }
+                span {
+                    font-size:14px;
+                    text-decoration:none;
+                    line-height:18px;
+                }
+            }
+            .des_hover {
+                display: none;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                background: rgba(197, 173, 211, 0.8);
+                z-index:99;
+                p {
+                    position: absolute;
+                    bottom: 0;
+                    left:0;
+                    font-size: 14px;
+                    color: #fff;
+                    line-height: 24px;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    display: inline-block;
+                }
+                .btn_add {
+                    position: absolute;
+                    top: 25%;
+                    left: 50%;
+                    transform: translateX(-50%, );
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    width: 65px;
+                    height: 65px;
+                    background: transparent;
+                    cursor: pointer;
+                    display: none;
+                    span {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            color: #fff;
+                            width: 22px;
+                            border-top: 1px solid #fff;
+                            bottom: 50%;
+                            left: 50%;
+                            box-sizing: border-box;
+                            transform: translate(-50%, 50%);
+                        }
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            box-sizing: border-box;
+                            color: #fff;
+                            border-left: 1px solid #fff;
+                            bottom: 50%;
+                            left: 50%;
+                            transform: translate(-50%, 50%);
+                            height: 22px;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .des_hover {
+                    display: block;
+                    .btn_add {
+                        display: block;
+                    }
+                }
+                .desc {
+                    display: none;
+                }
+            }
+        }
+    }
+    &.small .product_la {
+        width: 20%;
+    }
+    &.big .product_la {
+        width: 16.6666%;
+    }
+}
+
 .product_cat {
     float: left;
     width: 75%;
@@ -1035,6 +1157,56 @@ span.rs {
     #sort_cat {
         width: 100%;
         font-size: 13px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #d7d7d7;
+        .qu_cand {
+            float: left;
+            width: 30%;
+            p {
+                float: right;
+                line-height: 44px;
+                box-sizing: border-box;
+                display: inline-block;
+            }
+            ul {
+                float: right;
+                display: block;
+                text-align: right;
+                margin: 11px 0;
+                li {
+                    display: inline-block;
+                    list-style-type: none;
+                    margin-left: 25px;
+                    &:hover a,
+                    &.active a {
+                        span {
+                            background: #d7d7d7;
+                        }
+                    }
+                    &.fore a {
+                        width: 20px;
+                    }
+                    &.six a {
+                        width: 30px;
+                    }
+                    a {
+                        box-sizing: border-box;
+                        display: inline-block;
+                        span {
+                            float: left;
+                            width: 8px;
+                            height: 8px;
+                            display: inline-block;
+                            margin-right: 2px;
+                            margin-bottom: 2px;
+                            border: 1px solid #d7d7d7;
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+        }
         .consist {
             float: left;
             width: 70%;
@@ -1048,6 +1220,7 @@ span.rs {
                     padding-left: 20px;
                     position: relative;
                     border-left: 1px solid #d7d7d7;
+                    color: #c1c1c1;
                     span.rs {
                         margin-bottom: -4px;
                     }
@@ -1082,17 +1255,17 @@ span.rs {
                     width: 330px;
                 }
                 &.tp {
-                	position: relative;
-                	&:after {
-                		content:"";
-                		position:absolute;
-                		height:18px;
-                		border-left:1px solid #d7d7d7;
-                		display:block;
-                		box-sizing:border-box;
-                		right:0;
-                		top: 14px;                		
-                	}
+                    position: relative;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        height: 18px;
+                        border-left: 1px solid #d7d7d7;
+                        display: block;
+                        box-sizing: border-box;
+                        right: 0;
+                        top: 14px;
+                    }
                     .drop_content {
                         width: 100%;
                     }
@@ -1135,6 +1308,7 @@ span.rs {
                             line-height: 18px;
                             font-size: 13px;
                             text-decoration: none;
+                            color: #c1c1c1;
                             span.rs {
                                 margin-bottom: -4px;
                             }
@@ -1256,7 +1430,8 @@ span.rs {
 #gr_box {
     float: left;
     width: 25%;
-    margin: 20px 0;
+    margin-top: 64px;
+    margin-bottom: 25px;
     box-sizing: border-box;
     padding-right: 30px;
     .wrap_border {
