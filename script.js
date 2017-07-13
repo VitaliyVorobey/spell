@@ -203,3 +203,31 @@
     .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
 
 }(jQuery);
+
+
+
+document.getElementById("foreBtn").addEventListener("click", foreFunction);
+document.getElementById("sixBtn").addEventListener("click", sixFunction);
+var p = document.getElementById("product_list");
+
+function foreFunction() {
+    if (p.classList.contains("big")) {
+      p.classList.add("small");
+     p.classList.remove("big");
+    }
+    else {
+      true;
+    }
+    
+        
+}
+function sixFunction() {
+    if (p.classList.contains("small")) {
+      p.classList.add("big");
+     p.classList.remove("samll");
+    }
+     else {
+      true;
+    }
+        
+}
