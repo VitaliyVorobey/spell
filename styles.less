@@ -1099,6 +1099,15 @@ span.rs {
                     background: transparent;
                     cursor: pointer;
                     display: none;
+                    &:hover {
+                        border-color: #67288b;
+                         span {
+                        &:after, &:before {
+                            border-color: #67288b;
+
+                        }
+                    }
+                    }  
                     span {
                         position: relative;
                         width: 100%;
