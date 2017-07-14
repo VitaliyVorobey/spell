@@ -205,10 +205,14 @@
 }(jQuery);
 
 
-
+document.getElementById("btn_send").addEventListener("click", sencFunction);
 document.getElementById("foreBtn").addEventListener("click", foreFunction);
 document.getElementById("sixBtn").addEventListener("click", sixFunction);
 var p = document.getElementById("product_list");
+function sencFunction() {  
+   document.getElementById("senc").style.display = "block";   
+        
+}
 
 function foreFunction() {
     if (p.classList.contains("big")) {
