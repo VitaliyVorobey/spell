@@ -1171,6 +1171,13 @@ span.rs {
         width: 100%;
     }
     .fruit_product_list {
+        margin: 30px 0;
+        .pr_wrp {
+              min-height: 1px;
+        float: left;
+        width: 25%;
+
+        }
        .product .desc .title {
         font-size: 14px;
         line-height: 1em;
@@ -1214,18 +1221,15 @@ span.rs {
         color: #fff;
     }
     .product {
-        position: relative;
-        min-height: 1px;
-        float: left;
-        width: 25%;
-        transition: all 1s linear;
-        -moz-transition: all 1s linear;
-        -webkit-transition: all 1s linear;
-        -o-transition: all 1s linear;
-        -ms-transition: all 1s linear;
-        margin: 0 auto;
-        position: relative;
-        padding-bottom: 20px;
+        width: 80%;
+transition: all 1s linear;
+-moz-transition: all 1s linear;
+-webkit-transition: all 1s linear;
+-o-transition: all 1s linear;
+-ms-transition: all 1s linear;
+margin: 0 auto;
+position: relative;
+padding-bottom: 20px;
         img {
             display: block;
             max-width: 100%;
@@ -1339,7 +1343,8 @@ span.rs {
             &.np .drop_content {
                 width: 330px;
             }
-            &.tp { font-weight:300;
+            &.tp { 
+                font-weight:300;
                 position: relative;
                 &:after {
                     content: "";
@@ -1354,6 +1359,16 @@ span.rs {
                 .drop_content {
                     width: 100%;
                 }
+            }
+            &.qtity {
+                 .drop_content {
+                    width: 100%;
+                }
+                 .wrap_i {
+                    width: 60px;
+                 }
+
+
             }
             .wrap_i {
                 z-index: 2;
@@ -1451,6 +1466,7 @@ span.rs {
                 border-left: 1px solid transparent;
                 border-right: 1px solid transparent;
                 width: 100%;
+                text-align: left;
                 &:after {
                     content: "";
                     position: absolute;
@@ -1740,7 +1756,7 @@ span.rs {
             transform:translate(-50%,-50%);
             width: 100%;
             display: block;         
-            
+
             div {
                 position: relative;
                 width: 50px;
@@ -2354,14 +2370,14 @@ span.rs {
                     text-decoration: underline;
                 }
 
-                
-                
+
+
             }
             .img_wrap {
                 img {
                     vertical-align: top;
                 }
-                
+
             }
             .wr_name {
                 width: 100%;
