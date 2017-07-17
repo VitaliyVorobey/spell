@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
 <body>
     <div class="container">
         <div class="product_page">
@@ -18,10 +16,35 @@
                 <div class="product_des">
                     <h2>Desire Spell</h2>
                     <p class="ab">Разнообразие вкусов в одной коробке. Насыщенные цитрусовые, пьянящие алкогольниые и непревзойденные сырные вкусы в сете из 9 конфет</p>
-                    <p class="price">Цена<span class="line"></span>50 грн/шт.</p>
+                    <div class="pr_wrp">
+                        <p class="price">Цена<span class="line"></span>50 грн/шт.</p>
+                    </div>
+                    <div class="qt_wrp">
+                        <label for="qu">К-во
+                            <input id="qu" type="text" placeholder="1">
+                        </label>
+                    </div>                    
+                    <div class="clr"></div>                    
+                </div>
+                <div class="w_box">
+                    <p>Выбор коробки</p>
+                    <ul class="wrap_box">
+                        <li class="active"><a class="black_box box" href="#"></a></li>
+                        <li><a class="purple_box box" href="#"></a></li>
+                        <li><a class="white_box box" href="#"></a></li>
+                    </ul>
+                    <p>Выбор ленты</p>
+                    <ul class="wrap_lt">
+                        <li class="active"><a class="grey_lt lt" href="#"></a></li>
+                        <li ><a class="brown_lt lt" href="#"></a></li>
+                        <li ><a class="red_lt lt" href="#"></a></li>
+                        <li ><a class="purple_lt lt" href="#"></a></li>
+                        <li ><a class="white_lt lt" href="#"></a></li>
+                    </ul>
+                    <div class="clr"></div>
                 </div>
                 <div class="g_block">
-                    <a class="gr_btn" href="#">создать коробку</a>
+                    <a class="gr_btn" href="#">купить</a>
                     <ul class="by_p">
                         <li class="text">Закажите по телефону</li>
                         <li class="phone">+38(044) 278-19-17</li>
@@ -34,14 +57,14 @@
         <div class="fo_cand_tab">
             <div class="list_tab twb-tabs">
                 <ul>
-                    <li class="active"><a href="#tab1" data-toggle="tab">В каких коробках находится</a></li>
+                    <li class="active"><a href="#tab1" data-toggle="tab">В эту коробку входят</a></li>
                     <li><a href="#tab2" data-toggle="tab">Состав</a></li>
                     <li><a href="#tab3" data-toggle="tab">Отзывы</a></li>
                     <li><a href="#tab4" data-toggle="tab">Оплата и доставка</a></li>
                 </ul>
             </div>
             <div class="twb-tab-content tab-content tab_content_product_page">
-                <div id="tab1" class="tab-pane fade active in first_tab">
+                <div id="tab1" class="tab-pane fade active in in_box">
                     <div class="pag_wrap">
                         <ul>
                             <li class="active"></li>
@@ -51,95 +74,145 @@
                             <li></li>
                         </ul>
                     </div>
-                    <div class="box_wrap">
+                    <div class="box_wrap"> 
+                     <a href="#">
                         <div class="img_wrap">
-                            <img src="box_cand.png" alt="">
+                            <img src="cand1.jpg" alt="">
                         </div>
                         <div class="name_box">
-                            <h4>Desire spell <br>
-                            (9 штук)</h4>
+                            <div class="wr_name">
+                                <h4>Маракуйя-апельсин</h4>
+                                <p>Нежный молочный шоколад со вкусом маракуййи и апельсина, кедровых орехов и еще всего-всего</p>                                
+                            </div>
+                            
                         </div>
+                        </a>
                     </div>
-                    <div class="box_wrap">
+                              <div class="box_wrap"> 
+                     <a href="#">
                         <div class="img_wrap">
-                            <img src="box_cand.png" alt="">
+                            <img src="cand1.jpg" alt="">
                         </div>
                         <div class="name_box">
-                            <h4>Desire spell <br>
-                            (9 штук)</h4>
+                            <div class="wr_name">
+                                <h4>Маракуйя-апельсин</h4>
+                                <p>Нежный молочный шоколад со вкусом маракуййи и апельсина, кедровых орехов и еще всего-всего</p>                                
+                            </div>
+                            
                         </div>
+                        </a>
                     </div>
-                    <div class="box_wrap">
+                             <div class="box_wrap"> 
+                     <a href="#">
                         <div class="img_wrap">
-                            <img src="box_cand.png" alt="">
+                            <img src="cand1.jpg" alt="">
                         </div>
                         <div class="name_box">
-                            <h4>Desire spell <br>
-                            (9 штук)</h4>
+                            <div class="wr_name">
+                                <h4>Маракуйя-апельсин</h4>
+                                <p>Нежный молочный шоколад со вкусом маракуййи и апельсина, кедровых орехов и еще всего-всего</p>                                
+                            </div>
+                            
                         </div>
+                        </a>
                     </div>
-                    <div class="box_wrap">
+                             <div class="box_wrap"> 
+                     <a href="#">
                         <div class="img_wrap">
-                            <img src="box_cand.png" alt="">
+                            <img src="cand1.jpg" alt="">
                         </div>
                         <div class="name_box">
-                            <h4>Desire spell <br>
-                            (9 штук)</h4>
+                            <div class="wr_name">
+                                <h4>Маракуйя-апельсин</h4>
+                                <p>Нежный молочный шоколад со вкусом маракуййи и апельсина, кедровых орехов и еще всего-всего</p>                                
+                            </div>
+                            
                         </div>
+                        </a>
                     </div>
-                    <div class="box_wrap">
+                            <div class="box_wrap"> 
+                     <a href="#">
                         <div class="img_wrap">
-                            <img src="box_cand.png" alt="">
+                            <img src="cand4.jpg" alt="">
                         </div>
                         <div class="name_box">
-                            <h4>Desire spell <br>
-                            (9 штук)</h4>
+                            <div class="wr_name">
+                                <h4>Маракуйя-апельсин</h4>
+                                <p>Нежный молочный шоколад со вкусом маракуййи и апельсина, кедровых орехов и еще всего-всего</p>                                
+                            </div>
+                            
                         </div>
+                        </a>
                     </div>
-                    <div class="box_wrap">
+                             <div class="box_wrap"> 
+                     <a href="#">
                         <div class="img_wrap">
-                            <img src="box_cand.png" alt="">
+                            <img src="cand3.jpg" alt="">
                         </div>
                         <div class="name_box">
-                            <h4>Desire spell <br>
-                            (9 штук)</h4>
+                            <div class="wr_name">
+                                <h4>Маракуйя-апельсин</h4>
+                                <p>Нежный молочный шоколад со вкусом маракуййи и апельсина, кедровых орехов и еще всего-всего</p>                                
+                            </div>
+                            
                         </div>
+                        </a>
                     </div>
-                    <div class="box_wrap">
+                             <div class="box_wrap"> 
+                     <a href="#">
                         <div class="img_wrap">
-                            <img src="box_cand.png" alt="">
+                            <img src="cand2.jpg" alt="">
                         </div>
                         <div class="name_box">
-                            <h4>Desire spell <br>
-                            (9 штук)</h4>
+                            <div class="wr_name">
+                                <h4>Маракуйя-апельсин</h4>
+                                <p>Нежный молочный шоколад со вкусом маракуййи и апельсина, кедровых орехов и еще всего-всего</p>                                
+                            </div>
+                            
                         </div>
+                        </a>
                     </div>
-                    <div class="box_wrap">
+                             <div class="box_wrap"> 
+                     <a href="#">
                         <div class="img_wrap">
-                            <img src="box_cand.png" alt="">
+                            <img src="cand4.jpg" alt="">
                         </div>
                         <div class="name_box">
-                            <h4>Desire spell <br>
-                            (9 штук)</h4>
+                            <div class="wr_name">
+                                <h4>Маракуйя-апельсин</h4>
+                                <p>Нежный молочный шоколад со вкусом маракуййи и апельсина, кедровых орехов и еще всего-всего</p>                                
+                            </div>
+                            
                         </div>
+                        </a>
                     </div>
-                    <div class="box_wrap">
+                             <div class="box_wrap"> 
+                     <a href="#">
                         <div class="img_wrap">
-                            <img src="box_cand.png" alt="">
-                        </div>
-                       <div class="name_box">
-                            <h4>Desire spell <br>
-                            (9 штук)</h4>
-                        </div>
-                    </div>
-                    <div class="box_wrap">
-                        <div class="img_wrap">
-                            <img src="box_cand.png" alt="">
+                            <img src="cand2.jpg" alt="">
                         </div>
                         <div class="name_box">
-                            <h4>Desire spell <br>
-                            (9 штук)</h4>
+                            <div class="wr_name">
+                                <h4>Маракуйя-апельсин</h4>
+                                <p>Нежный молочный шоколад со вкусом маракуййи и апельсина, кедровых орехов и еще всего-всего</p>                                
+                            </div>
+                            
                         </div>
+                        </a>
+                    </div>
+                             <div class="box_wrap"> 
+                     <a href="#">
+                        <div class="img_wrap">
+                            <img src="cand3.jpg" alt="">
+                        </div>
+                        <div class="name_box">
+                            <div class="wr_name">
+                                <h4>Маракуйя-апельсин</h4>
+                                <p>Нежный молочный шоколад со вкусом маракуййи и апельсина, кедровых орехов и еще всего-всего</p>                                
+                            </div>
+                            
+                        </div>
+                        </a>
                     </div>
                     <div class="clr"></div>
                 </div>
@@ -207,7 +280,7 @@
                 <div id="tab4" class="tab-pane fade in"></div>
             </div>
         </div>
-    </div>    
+    </div>
     <script src="script.js" type='text/javascript'></script>
 </body>
 
