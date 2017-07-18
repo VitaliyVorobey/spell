@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+</head>
+
+<body>
+   <div class="container">
+    <div class="bas_page">
+        <h3>Корзина</h3>
+        <table class="bas_table">
+            <tr>
+                <th>Название</th>
+                <th>Состав коробки</th>
+                <th>К-во коробок</th>
+                <th>Цена</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="line_block">
+                        <button class="t_away" type="button"></button>
+                        <h4 class="name_cand">DESIRE SPELL <span>(9 конфет)</span></h4>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="img_wrap">
+                        <img src="box1.jpg" alt="">
+                    </div>
+                    <ul>
+                        <li>черная матовая коробка</li>
+                        <li>золотистая лента</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Малиновый рай <span>(2 шт)</span></li>
+                        <li>Сырный чииз <span>(3 шт)</span></li>
+                        <li>Алкогольный твист <span>(2 шт)</span></li>
+                        <li>Малиновый рай <span>(2 шт)</span></li>
+                    </ul>
+                </td>
+                <td>
+                    <div class="b_amount">
+                        <a class="pl" href=""></a>
+                        <input type="text" placeholder="2">
+                        <a class="mi" href=""></a>  
+                    </div>
+                    
+                </td>
+                <td>
+                    <p class="price_item">700 грн</p>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><p>Доставка: <span>50 грн</span></p></td>
+                <td><p>Итого: <span>465 грн</span></p></td>
+            </tr>
+            <tr>
+                <td><h4 class="sum_text">Общая Сумма: <span>515 грн</span></h4></td>
+            </tr>
+        </table>
+        <h3>Оформление заказа</h3>
+        <table class="order_table">
+            <tr>
+                <td>
+                    <label for="in1">ФИО
+                        <input id="in1" class="fio_input" type="text">
+                    </label>
+                    <label for="in2">E-mail
+                        <input id="in2" class="email_input" type="email">                       
+
+                    </label>
+                </td>
+                <td>
+                    <label for="in3">Номер телефона
+                        <input id="in3" type="tel">
+                    </label>
+                    <label for="in4">Адрес доставки
+                        <input id="in4" type="text">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Выберите способ доставки:</p>
+                    <ul>                        
+                        <li>
+                            <input type="radio" id="f-option" name="selector">
+                            <label for="f-option">Самовывоз</label>
+                            <div class="check"></div>
+                        </li>                        
+                        <li>
+                            <input type="radio" id="t-option" name="selector">
+                            <label for="t-option">Курьером по Киеву(от 60 грн бесплатно)</label>
+                            <div class="check"></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="s-option" name="selector">
+                            <label for="s-option">Новая почта</label>
+                            <div class="check"></div>
+                        </li>
+                    </ul>
+                </td>
+                 <td>
+                    <p>Способы оплаты:</p>
+                    <ul>                        
+                        <li>
+                            <input type="radio" id="k-option" name="selector">
+                            <label for="k-option">Наличными курьеру</label>
+                            <div class="check"></div>
+                        </li>                        
+                        <li>
+                            <input type="radio" id="h-option" name="selector">
+                            <label for="h-option">Оплата онлайн</label>
+                            <div class="check"></div>
+                        </li>                     
+                    </ul>
+                </td>                
+
+            </tr>
+            <tr>
+                <td>
+                <p>Добавить комментарий</p>
+                <textarea name="" id="" ></textarea>
+                <button class="by" type="button">Подтвердить заказ</button>
+                </td>
+            </tr>
+        </table>
+        <a class="return" href="#" onclick="return false;">вернуться к покупкам</a>
+
+    </div>  
+    <div class="clr"></div>
+</div>           
+
+</body>
+
+</html>

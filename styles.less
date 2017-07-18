@@ -2775,7 +2775,7 @@ h4 {font-weight:300;
             font-size: 14px;
             font-weight: 300;
             padding-left: 5.57%;
-            line-height: 34px;
+            line-height: 30px;
             margin-top: 15px;
         }
     }
@@ -2785,7 +2785,7 @@ h4 {font-weight:300;
         background: url("kis.png") no-repeat 0 0;
         margin: 25px 0;
         min-height: 458px;
-        
+
         .right_text {
             float: right;
             width: 50%;
@@ -2795,6 +2795,7 @@ h4 {font-weight:300;
                 font-size: 14px;
                 font-weight: 300;
                 margin-bottom: 30px;
+                line-height: 30px;
             }
 
         }
@@ -2814,6 +2815,83 @@ h4 {font-weight:300;
             }
         }
     }
+}
+.bas_page {
+   display: block;
+   position: relative;
+   width: 100%;
+   min-height: 1000px;
+   text-align: center;
+   h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 30px 0;
+}
+&:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    background: url(leftban.jpg) repeat-y, 
+    url(rightban.jpg) 100% 0 repeat-y;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+} 
+}
+.bas_page {
+    table {
+        width: 62.63%;
+        margin: 0 auto;
+        p, h4, input, textarea, button, a, th{
+            font-weight: 300;
+        }
+        ul {
+            li {
+                list-style-type: none;
+                font-weight: 300;
+                
+            }
+        }   
+        &.bas_table {
+            border:1px solid #d7d7d7;
+            th:nth-child(1) {
+                width: 31%;
+                padding-left: 54px;
+                &:before {
+                    display: none;
+                }
+            }
+            th:nth-child(2) {
+                width: 27%;
+            }
+            th:nth-child(3) {
+                width: 25%;
+            }
+            th:nth-child(4) {
+                width: 17%;
+            }
+            th {
+                text-align: left;                
+                line-height: 68px;               
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    border-left: 1px solid #d7d7d7;
+                    font-size: 14px;
+                    height: 14px;
+                    padding-right: 23px;
+                }
+            }
+
+        }
+        &.order_table {
+            border:1px solid #d7d7d7;
+        }
+    }
+    
 }
 @media all and (max-width:1500px) {
     .product_cat #sort_cat .consist .select_consist {
