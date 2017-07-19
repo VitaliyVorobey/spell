@@ -10,11 +10,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
 </head>
 
-<body>
-   <div class="container">
+<body class="common-home">
+    <nav id="top">
+      <div class="container">
+        <div id="logo" data-sb="pulse" style="opacity: 1;" class="sb-effect-displayed animated pulse">
+          <a href="http://spell.ddforce.com/index.php?route=common/home"><img src="http://spell.ddforce.com/image/logo-spell.png" title="Your Store" alt="Your Store" class="img-responsive"></a>
+      </div>
+      <div id="top-links" class="nav">
+          <div class="line light slowmotion delay125 sb-effect-displayed animated fadeInLeft" data-sb="fadeInLeft" style="opacity: 1;"></div> 
+          <ul class="list-inline">
+            <li class="delay1 sb-effect-displayed animated fadeInUp" data-sb="fadeInUp" style="opacity: 1;"><a href="">Сети цукерок</a></li>
+            <li class="delay1 sb-effect-displayed animated fadeInUp" data-sb="fadeInUp" style="opacity: 1;"><a href="">Сезонні пропозиції</a></li>
+            <li class="delay1 sb-effect-displayed animated fadeInUp" data-sb="fadeInUp" style="opacity: 1;"><a href="">ідеї</a></li>
+            <li class="delay1 sb-effect-displayed animated fadeInUp" data-sb="fadeInUp" style="opacity: 1;"><a href="">корпоративним клієнтам</a></li>
+            <li class="delay1 sb-effect-displayed animated fadeInUp" data-sb="fadeInUp" style="opacity: 1;"><a href="">про нас</a></li>
+            <li class="delay1 sb-effect-displayed animated fadeInUp" data-sb="fadeInUp" style="opacity: 1;"><a href="">оплата і доставка</a></li>
+            <li class="delay1 sb-effect-displayed animated fadeInUp" data-sb="fadeInUp" style="opacity: 1;"><a href="">контакти</a></li>
+        </ul>
+        <div class="line light slowmotion delay125 sb-effect-displayed animated fadeInRight" data-sb="fadeInRight" style="opacity: 1;"></div> 
+    </div>
+    <div id="cart">
+      <img src="http://spell.ddforce.com/image/cart.png" alt="cart" data-sb="flipInY" style="opacity: 1;" class="sb-effect-displayed animated flipInY"> <p data-sb="flipInY" style="opacity: 1;" class="sb-effect-displayed animated flipInY">(0)</p>
+  </div>
+</div>
+
+
+</nav>
+<header>
+    <div class="clr"></div>
+
+</header>
+<div class="container">
+
     <div class="bas_page">
         <h3>Корзина</h3>
-        <table class="bas_table">
+        <table class="bas_table" cellspacing="0">
             <tr>
                 <th>Название</th>
                 <th>Состав коробки</th>
@@ -59,85 +89,130 @@
                 </td>
             </tr>
             <tr>
-                <td><p>Доставка: <span>50 грн</span></p></td>
-                <td><p>Итого: <span>465 грн</span></p></td>
-            </tr>
-            <tr>
-                <td><h4 class="sum_text">Общая Сумма: <span>515 грн</span></h4></td>
-            </tr>
-        </table>
-        <h3>Оформление заказа</h3>
-        <table class="order_table">
-            <tr>
-                <td>
-                    <label for="in1">ФИО
-                        <input id="in1" class="fio_input" type="text">
-                    </label>
-                    <label for="in2">E-mail
-                        <input id="in2" class="email_input" type="email">                       
+             <td></td>
+             <td></td>
+             <td ><p>Доставка: <span>50 грн</span></p></td>
+             <td><p>Итого: <span>465 грн</span></p></td>
+         </tr>
+         <tr>
+            <td colspan="4"><h4 class="sum_text">Общая Сумма: <span>515 грн</span></h4></td>
+        </tr>
+    </table>
+    <h3>Оформление заказа</h3>
+    <table class="order_table" cellspacing="0">
+        <tr>
+            <td>
+                <label for="in1">ФИО
+                    <input id="in1" class="fio_input" type="text">
+                </label>
+                <label for="in2">E-mail
+                    <input id="in2" class="email_input" type="email">                       
 
-                    </label>
-                </td>
-                <td>
-                    <label for="in3">Номер телефона
-                        <input id="in3" type="tel">
-                    </label>
-                    <label for="in4">Адрес доставки
-                        <input id="in4" type="text">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Выберите способ доставки:</p>
-                    <ul>                        
-                        <li>
-                            <input type="radio" id="f-option" name="selector">
-                            <label for="f-option">Самовывоз</label>
-                            <div class="check"></div>
-                        </li>                        
-                        <li>
-                            <input type="radio" id="t-option" name="selector">
-                            <label for="t-option">Курьером по Киеву(от 60 грн бесплатно)</label>
-                            <div class="check"></div>
-                        </li>
-                        <li>
-                            <input type="radio" id="s-option" name="selector">
-                            <label for="s-option">Новая почта</label>
-                            <div class="check"></div>
-                        </li>
-                    </ul>
-                </td>
-                 <td>
-                    <p>Способы оплаты:</p>
-                    <ul>                        
-                        <li>
-                            <input type="radio" id="k-option" name="selector">
-                            <label for="k-option">Наличными курьеру</label>
-                            <div class="check"></div>
-                        </li>                        
-                        <li>
-                            <input type="radio" id="h-option" name="selector">
-                            <label for="h-option">Оплата онлайн</label>
-                            <div class="check"></div>
-                        </li>                     
-                    </ul>
-                </td>                
+                </label>
+            </td>
+            <td>
+                <label for="in3">Номер телефона
+                    <input id="in3" type="tel">
+                </label>
+                <label for="in4">Адрес доставки
+                    <input id="in4" type="text">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Выберите способ доставки:</p>
+                <ul>                        
+                    <li>
+                        <input type="radio" id="f-option" name="selector">
+                        <label for="f-option">Самовывоз</label>
+                        <div class="check"></div>
+                    </li>                        
+                    <li>
+                        <input type="radio" id="t-option" name="selector">
+                        <label for="t-option">Курьером по Киеву(от 60 грн бесплатно)</label>
+                        <div class="check"></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="s-option" name="selector">
+                        <label for="s-option">Новая почта</label>
+                        <div class="check"></div>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <p>Способы оплаты:</p>
+                <ul>                        
+                    <li>
+                        <input type="radio" id="k-option" name="selector">
+                        <label for="k-option">Наличными курьеру</label>
+                        <div class="check"></div>
+                    </li>                        
+                    <li>
+                        <input type="radio" id="h-option" name="selector">
+                        <label for="h-option">Оплата онлайн</label>
+                        <div class="check"></div>
+                    </li>                     
+                </ul>
+            </td>                
 
-            </tr>
-            <tr>
-                <td>
+        </tr>
+        <tr>
+            <td colspan="2">
                 <p>Добавить комментарий</p>
                 <textarea name="" id="" ></textarea>
                 <button class="by" type="button">Подтвердить заказ</button>
-                </td>
-            </tr>
-        </table>
-        <a class="return" href="#" onclick="return false;">вернуться к покупкам</a>
+            </td>
+        </tr>
+    </table>
+    <a class="return" href="#" onclick="return false;">вернуться к покупкам</a>
 
-    </div>  
-    <div class="clr"></div>
-</div>           
+</div>  
+<div class="clr"></div>
+</div>
+<div class="instawrap container">
+  <div class="left-place slowmotion delay125 sb-effect-displayed animated zenFadeInLeftBig" data-sb="zenFadeInLeftBig" style="opacity: 1;">
+    <div class="row">
+      <p>Follow us</p>
+      <div class="line"></div>
+      <div class="social">
+        <a href="#" onclick="return false;"><img src="http://spell.ddforce.com/image/template/facebook.svg" alt=""></a>
+        <a href="#" onclick="return false;"><img src="http://spell.ddforce.com/image/template/instagram.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="row">
+      <p>присоединяйтесь к нам в социальных сетях,<br>и будьте в курсе наших новинок</p>
+    </div>
+  </div>
+  <div id="insta">
+    <img class="adaptive slowmotion delay075 sb-effect-displayed animated zenFadeInRightBig" data-sb="zenFadeInRightBig" src="http://spell.ddforce.com/image/template/insta1.png" alt="" style="opacity: 1;">
+    <img class="adaptive slowmotion delay1 sb-effect-displayed animated zenFadeInRightBig" data-sb="zenFadeInRightBig" src="http://spell.ddforce.com/image/template/insta2.png" alt="" style="opacity: 1;">
+    <img class="adaptive slowmotion delay125 sb-effect-displayed animated zenFadeInRightBig" data-sb="zenFadeInRightBig" src="http://spell.ddforce.com/image/template/insta3.png" alt="" style="opacity: 1;">
+  </div>
+</div>
+<footer>
+  <div class="container">
+      <div class="slowmotion delay125 left sb-effect-displayed animated zenFadeInLeftBig" data-sb="zenFadeInLeftBig" style="opacity: 1;">По всем вопросам звоните по номеру<br>(044) 280-10-34  /  (044) 280-10-34</div>
+      <div class="center">
+        <p>Зворотній<br>дзвінок</p>
+        <div id="error-msg"></div>
+        <div class="formwubs">
+            <input class="form-control" id="input-phone" placeholder="+38(0__)__-__-___" value="" name="phone" type="text">
+            <input id="subcribe" class="btn btn-primary" value="" type="button">
+        </div>
+      </div>
+      <div class="right">
+                    <p>Підпишіться<br>на розсилку:</p>
+                    <div id="error-msg"></div>
+                    <div class="formwubs">
+                        <input class="form-control" id="input-newsletter" placeholder="Ваш email" value="" name="newsletter" type="text">
+                        <input id="subcribe" class="btn btn-primary" value="" type="button">
+                    </div>
+                </div>
+  </div>
+  
+
+</footer>           
 
 </body>
 
