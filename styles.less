@@ -3408,6 +3408,10 @@ h4.share {
 
 
 @media all and (max-width:1500px) {
+    .about_block .about_content .right_text {
+        padding-right: 10%;
+        padding-left: 5%;
+    }
 
     .product_cat #sort_cat .consist .select_consist {
         width: 13vw;
@@ -3436,8 +3440,21 @@ h4.share {
         width: 80%;
     }
 }
-
+@media all and (max-width:1376px) {
+    .about_block .about_content .right_text {
+        padding-right: 5%;
+        padding-left: 10%;
+    }
+}
 @media all and (max-width:1280px) {
+    .about_block .about_content {
+        background-size: contain;
+        min-height: 30vw; 
+    }
+    .about_block .about_content .right_text {
+    padding-right: 0;
+    padding-left: 12%;
+}
     .bas_page table {
         width: 83%;
     }
@@ -3490,6 +3507,9 @@ h4.share {
     .bas_page table {
         width: 92%;
     }
+    .about_block .about_ban h2 {
+        font-size: 22vw;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -3539,5 +3559,11 @@ h4.share {
     }
     .fo_cand_tab .in_box .box_wrap .wr_name h4 {
         margin-top: 0;
+    }
+    .bas_page table.order_table tr:nth-child(1) td label input {
+        width: 100%;
+    }
+    .bas_page table.bas_table tr:nth-last-child(2) td:nth-last-child(1) p::before, .bas_page table.bas_table th::before {
+        padding-right: 15px;
     }
 }
