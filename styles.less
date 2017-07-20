@@ -25,6 +25,7 @@
 
 
 
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1032,6 +1033,7 @@ footer {
         }
     }
 }
+
 
 
 
@@ -3604,6 +3606,11 @@ h4.share {
     }
     .bas_page table {
         width: 83%;
+        background: rgba(255, 255, 255, 0.89);
+    }
+
+    .bas_page table.bas_table tr:nth-last-child(1) {
+        background: rgba(212, 212, 212, 0.67);
     }
 
     .product_page {
@@ -3661,6 +3668,12 @@ h4.share {
     .about_block .about_ban h2 {
         font-size: 21vw;
     }
+    #top-links ul li.fo_drop .drop_menu {
+        width: 348px;
+    }
+    #top-links ul li.fo_drop .drop_menu .wrp_menu {
+        padding: 25px 0;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -3698,23 +3711,22 @@ h4.share {
         line-height: 125px;
     }
     .bas_page table {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.89);
-}
-.bas_page table.bas_table tr:nth-last-child(1) {
-    background: rgba(212, 212, 212, 0.67);
-}
+        width: 100%;
+        background: rgba(255, 255, 255, 0.89);
+    }
+    .bas_page table.bas_table tr:nth-last-child(1) {
+        background: rgba(212, 212, 212, 0.67);
+    }
 }
 
 @media all and (max-width:980px) {
-     .product_cat.fruit {
+    .product_cat.fruit {
         #sort_cat .consist .select_consist.qtity {
             width: 30%;
         }
         #sort_cat .consist .select_consist {
             width: 21%;
         }
-      
     }
     .product_cat .fruit_product_list .pr_wrp {
         width: 33.3%;
