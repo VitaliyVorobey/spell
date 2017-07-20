@@ -16,6 +16,9 @@
 
 
 
+
+
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1023,6 +1026,9 @@ footer {
         }
     }
 }
+
+
+
 
 
 
@@ -3408,9 +3414,48 @@ h4.share {
 
 
 @media all and (max-width:1500px) {
+    #gr_box .wrap_border .twb-tab-content .tab-pane .border_blok {
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    #gr_box .wrap_border .twb-tab-content .tab-pane.bg {
+        width: 240px;
+    }
+    #gr_box .wrap_border .twb-tab-content .tab-pane.sm {
+        width: 190px;
+    }
+    #gr_box .wrap_border .twb-tab-content .tab-pane.xs {
+        width: 140px;
+    }
     .about_block .about_content .right_text {
         padding-right: 10%;
         padding-left: 5%;
+    }
+    #gr_box .wrap_border .tab_cand ul.twb-tabs li {
+        margin-right: 10px;
+    }
+    #gr_box .wrap_border .twb-tab-content .tab-pane .border_blok.active:hover a::after {
+        content: "";
+        display: block;
+        width: 25px;
+        border-top: 1px solid #fff;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 20px;
+        left: 6px;
+    }
+    #gr_box .wrap_border .twb-tab-content .tab-pane .border_blok.active:hover a::before {
+        content: "";
+        display: block;
+        width: 25px;
+        border-top: 1px solid #fff;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 20px;
+        left: 6px;
     }
 
     .product_cat #sort_cat .consist .select_consist {
@@ -3440,27 +3485,29 @@ h4.share {
         width: 80%;
     }
 }
+
 @media all and (max-width:1376px) {
     .about_block .about_content .right_text {
         padding-right: 5%;
         padding-left: 10%;
     }
 }
+
 @media all and (max-width:1280px) {
     .about_block .about_content {
         background-size: contain;
-        min-height: 30vw; 
+        min-height: 30vw;
     }
     .about_block .about_content .right_text {
-    padding-right: 0;
-    padding-left: 12%;
-}
-.about_block .about_content .abs_text h3 {
-    font-size: 2vw;
-}
-.about_block .about_content .abs_text {
-    left: 40%;
-}
+        padding-right: 0;
+        padding-left: 12%;
+    }
+    .about_block .about_content .abs_text h3 {
+        font-size: 2vw;
+    }
+    .about_block .about_content .abs_text {
+        left: 40%;
+    }
     .bas_page table {
         width: 83%;
     }
@@ -3509,6 +3556,7 @@ h4.share {
         margin-left: 15px;
     }
 }
+
 @media all and (max-width:1150px) {
     .bas_page table {
         width: 92%;
@@ -3522,7 +3570,7 @@ h4.share {
     .about_block .about_ban p {
         float: right;
         padding-right: 5%;
-        padding-left:0; 
+        padding-left: 0;
     }
     .product_page {
         .main_product_des .w_box p {
@@ -3548,7 +3596,6 @@ h4.share {
             width: 30px;
             margin: 0 10px;
         }
-
     }
     .fo_cand_tab .box_wrap .img_wrap {
         line-height: 125px;
@@ -3560,24 +3607,24 @@ h4.share {
 
 @media all and (max-width:980px) {
     .about_block .about_content .abs_text {
-    left: 0;
-    transform: none;
-    bottom: 4%;
-    h3 {
-        line-height: 30px;
+        left: 0;
+        transform: none;
+        bottom: 4%;
+        h3 {
+            line-height: 30px;
+        }
     }
-}
-.about_block .about_content .abs_text h3 {
-    font-size: 2.5vw;
-}
+    .about_block .about_content .abs_text h3 {
+        font-size: 2.5vw;
+    }
     .about_block .about_content {
-    background-size: 40vw;
-    min-height: 30vw;
-}
+        background-size: 40vw;
+        min-height: 30vw;
+    }
     .about_block .about_content .right_text {
-    padding-right: 0;
-    padding-left: 0;
-}
+        padding-right: 0;
+        padding-left: 0;
+    }
     .product_page .left_wrap .left_tabs {
         width: 13%;
     }
@@ -3585,7 +3632,7 @@ h4.share {
         width: 87;
     }
     .fo_cand_tab .list_tab.twb-tabs ul li a {
-        padding: 0 15px; 
+        padding: 0 15px;
     }
     .fo_cand_tab .in_box .box_wrap .wr_name h4 {
         margin-top: 0;
@@ -3593,7 +3640,8 @@ h4.share {
     .bas_page table.order_table tr:nth-child(1) td label input {
         width: 100%;
     }
-    .bas_page table.bas_table tr:nth-last-child(2) td:nth-last-child(1) p::before, .bas_page table.bas_table th::before {
+    .bas_page table.bas_table tr:nth-last-child(2) td:nth-last-child(1) p::before,
+    .bas_page table.bas_table th::before {
         padding-right: 15px;
     }
 }
