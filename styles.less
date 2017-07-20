@@ -24,6 +24,7 @@
 
 
 
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1031,6 +1032,7 @@ footer {
         }
     }
 }
+
 
 
 
@@ -3424,6 +3426,14 @@ h4.share {
 
 
 @media all and (max-width:1500px) {
+    .product_cat.fruit {
+        #sort_cat .consist .select_consist {
+            width: 24%;
+        }
+        #sort_cat .consist {
+            width: 80%;
+        }
+    }
     #gr_box .wrap_border .twb-tab-content .tab-pane .border_blok {
         width: 40px;
         height: 40px;
@@ -3504,6 +3514,17 @@ h4.share {
 }
 
 @media all and (max-width:1280px) {
+    .product_cat.fruit {
+        #sort_cat .consist .select_consist {
+            width: 24%;
+        }
+        #sort_cat .consist {
+            width: 100%;
+        }
+        #sort_cat .consist .reset_all {
+            width: 21%;
+        }
+    }
     .product_cat #sort_cat .consist .select_consist {
         width: 32%;
     }
@@ -3677,11 +3698,27 @@ h4.share {
         line-height: 125px;
     }
     .bas_page table {
-        width: 100%;
-    }
+    width: 100%;
+    background: rgba(255, 255, 255, 0.89);
+}
 }
 
 @media all and (max-width:980px) {
+     .product_cat.fruit {
+        #sort_cat .consist .select_consist.qtity {
+            width: 30%;
+        }
+        #sort_cat .consist .select_consist {
+            width: 21%;
+        }
+      
+    }
+    .product_cat .fruit_product_list .pr_wrp {
+        width: 33.3%;
+    }
+    .cat_baner h2 {
+        font-size: 26vw;
+    }
     .product_cat {
         width: 68%;
     }
@@ -3751,7 +3788,21 @@ h4.share {
 }
 
 @media all and (max-width:800px) {
+    .product_cat .fruit_product_list .pr_wrp {
+        width: 50%;
+    }
+
     .prod_list.small .product_la {
         width: 50%;
+    }
+    .fo_cand_tab .rew_block .col2_1 .rew_form input {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .fo_cand_tab .rew_block .col2_1 .rew_form input.in_name {
+        margin-right: 0;
+    }
+    .fo_cand_tab .rew_block .col2_1 .rew_form button {
+        width: 40%;
     }
 }
