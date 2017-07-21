@@ -33,6 +33,9 @@
 
 
 
+
+
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1040,6 +1043,9 @@ footer {
         }
     }
 }
+
+
+
 
 
 
@@ -3933,6 +3939,71 @@ h4.share {
 }
 
 @media all and (max-width:768px) {
+    .instawrap {
+        flex-direction: column;
+        #insta {
+            flex-basis: 100%;
+            margin-bottom: 10px;
+            img {
+                width: 47%;
+                &:nth-child(3) {
+                    display: none;
+
+                }
+            }
+        }
+
+        .left-place {
+            flex-basis: 100%;
+            padding: 20px 20px;
+            margin-bottom: 20px;
+            .row {
+                flex-direction: column;
+                align-items: center;
+                p {
+                    text-align: center;
+                    br {
+                        display: none;
+                    }
+                }
+                &:nth-child(1) {
+                    p {
+                        margin-bottom: 15px;
+                    }
+                }
+                .social {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    footer {
+        padding-bottom: 20px;
+        .container {
+            flex-direction: column;
+            .left {
+                flex-basis: 100%;
+                text-align: center;
+            }
+            .center,
+            .right {
+                flex-basis: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    margin: 15px 0;
+                    br {
+                        display: none;
+                    }
+                }
+                #error-msg {
+                    margin-top: 15px 0;
+                }
+            }
+        }
+    }
     #top {
         display: none;
     }
@@ -3986,7 +4057,7 @@ h4.share {
                     font-weight: 300;
                     a {
                         text-decoration: none;
-                    }                  
+                    }
 
                     &.m,
                     p {
