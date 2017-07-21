@@ -28,6 +28,8 @@
 
 
 
+
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1035,6 +1037,8 @@ footer {
         }
     }
 }
+
+
 
 
 
@@ -3520,6 +3524,17 @@ h4.share {
 }
 
 @media all and (max-width:1280px) {
+    .contact_block {
+        position: relative;
+        .right_part {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .contact_block .left_part {
+            margin-bottom: 130px;
+        }
+    }
     footer {
         .container {
             flex-wrap: wrap;
@@ -3763,6 +3778,12 @@ h4.share {
 }
 
 @media all and (max-width:980px) {
+    .contact_block h2 {
+        font-size: 237px;
+    }
+    .contact_block .right_part {
+        padding-left: 0;
+    }
     .instawrap .left-place .row .line {
         display: none;
     }
