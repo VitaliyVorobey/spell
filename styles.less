@@ -26,6 +26,7 @@
 
 
 
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1033,6 +1034,7 @@ footer {
         }
     }
 }
+
 
 
 
@@ -3516,6 +3518,19 @@ h4.share {
 }
 
 @media all and (max-width:1280px) {
+    footer {
+        .container {
+            flex-wrap: wrap;
+            .left {            
+            flex-basis: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        }
+        
+    }
     .product_cat.fruit {
         #sort_cat .consist .select_consist {
             width: 24%;
@@ -3689,7 +3704,7 @@ h4.share {
 }
 
 @media all and (max-width:1024px) {
-       #top .container #top-links {
+    #top .container #top-links {
         -ms-flex-preferred-size: 87%;
         flex-basis: 87%;
     }
@@ -3745,17 +3760,17 @@ h4.share {
 
 @media all and (max-width:980px) {
     #top-links ul li.fo_drop .drop_menu {
-    width: 233px;
-}
-#top-links ul li.fo_drop .drop_menu .wrp_menu {
-    padding: 10px 0; 
-}
-#top-links ul li.fo_drop .drop_menu .wrp_menu .left_wrp {
-    width: 100%;
-}
-#top-links ul li.fo_drop .drop_menu .wrp_menu .left_wrp p {
-    margin-top: 15px;
-}
+        width: 233px;
+    }
+    #top-links ul li.fo_drop .drop_menu .wrp_menu {
+        padding: 10px 0;
+    }
+    #top-links ul li.fo_drop .drop_menu .wrp_menu .left_wrp {
+        width: 100%;
+    }
+    #top-links ul li.fo_drop .drop_menu .wrp_menu .left_wrp p {
+        margin-top: 15px;
+    }
     #top .container #top-links {
         -ms-flex-preferred-size: 87%;
         flex-basis: 87%;
