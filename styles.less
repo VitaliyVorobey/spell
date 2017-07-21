@@ -31,6 +31,7 @@
 
 
 
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1038,6 +1039,7 @@ footer {
         }
     }
 }
+
 
 
 
@@ -3438,6 +3440,9 @@ h4.share {
     }
 }
 
+.mob_menu {
+    display: none;
+}
 
 @media all and (max-width:1500px) {
     .product_cat.fruit {
@@ -3907,8 +3912,8 @@ h4.share {
         width: 55%;
     }
     .fo_cand_tab .rew_block .col2_1 .rew_form button {
-    width: 45%;
-}
+        width: 45%;
+    }
     .product_cat .fruit_product_list .pr_wrp {
         width: 50%;
     }
@@ -3923,5 +3928,33 @@ h4.share {
     .fo_cand_tab .rew_block .col2_1 .rew_form input.in_name {
         margin-right: 0;
     }
-   
+}
+
+@media all and (max-width:768px) {
+    #top {
+        display: none;
+    }
+    .mob_menu {
+        display: block;
+        min-height: 50px;
+        width: 100%;
+        float: left;
+        .menu_title {
+            width: 50px;
+            height: 50px;
+            background-color: #f7f8fa;
+            background: url("mob_menu.svg") no-repeat;
+            background-position: 0 0;
+            border: 1px solid #d7d7d7;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .menu_body {
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
 }

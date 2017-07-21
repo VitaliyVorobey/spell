@@ -204,6 +204,10 @@
 
 }(jQuery);
 
+jQuery(document).ready(function($){
+$('.menu_body').hide();
+$('.menu_title').click(function(){$(this).next().toggle()});
+});
 
 
 document.getElementById("foreBtn").addEventListener("click", foreFunction);
