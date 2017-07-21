@@ -32,6 +32,7 @@
 
 
 
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1039,6 +1040,7 @@ footer {
         }
     }
 }
+
 
 
 
@@ -3954,7 +3956,45 @@ h4.share {
         .menu_body {
             display: block;
             width: 100%;
-            margin-top: 50px;
+            margin-top: 60px;
+            padding: 0 10px;
+            border-bottom: 1px solid #d7d7d7;
+            ul {
+                .d_menu {
+                    .btn_d_menu {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        background: #F7F8FA;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 4px;
+                            right: 8px;
+                            width: 10px;
+                            height: 10px;
+                            border-top: 1px solid #d7d7d7;
+                            border-left: 1px solid #d7d7d7;
+                            transform: rotate(-135deg);
+                            display: block;
+                        }
+                    }
+                }
+                li {
+                    list-style-type: none;
+                    font-size: 14px;
+                    font-weight: 300;
+                    a {
+                        text-decoration: none;
+                    }                  
+
+                    &.m,
+                    p {
+                        text-transform: uppercase;
+                        line-height: 24px;
+                    }
+                }
+            }
         }
     }
 }
