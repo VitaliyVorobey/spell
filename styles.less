@@ -48,6 +48,10 @@
 
 
 
+
+
+
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1055,6 +1059,10 @@ footer {
         }
     }
 }
+
+
+
+
 
 
 
@@ -4000,8 +4008,42 @@ h4.share {
         width: 100%;
         text-align: center;
     }
+    .product_cat {
+        .p_sort {
+            width: 100%;
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #7c7c7c;
+            background-color: #f7f8fa;
+            box-sizing: border-box;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-family: 'Open Sans',sans-serif; 
+        }
+    }
     .wrp_bread {
-        display: none;
+        .breadcrumb {
+            li {
+                display: none;
+                &+li:before {
+                    display: none;
+                }
+                &:nth-last-child(1) {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+
+                    span {
+                        a {
+                            text-transform: uppercase;
+                            color: #7c7c7c !important;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
     }
     .cat_baner h2 {
         display: none;
@@ -4014,8 +4056,11 @@ h4.share {
         .consist {
             margin-left: 0;
             .reset_all {
-                    width: 100%;
+                width: 100% !important;
+                a.del_all {
+                    border: none;
                 }
+            }
 
             .select_consist {
                 width: 100%;
@@ -4025,7 +4070,7 @@ h4.share {
                     border: 1px solid #d7d7d7;
                     margin-bottom: 10px;
                     &:hover {
-                        border: none;
+                        border-color: #fff;
                     }
                     .drop_content {
                         width: 100%;
@@ -4041,14 +4086,20 @@ h4.share {
                     right: 29px;
                     border: none;
                 }
+                &.qtity {
+                    width: 100% !important;
+                }
             }
         }
     }
-
-
-    .prod_list.small .product_la {
-        width: 100%;
+    .prod_list .product_la .f_hover .des_hover p {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 13px;
     }
+
+
+
     .product_cat {
         width: 100%;
     }
