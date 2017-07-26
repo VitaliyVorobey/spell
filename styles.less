@@ -52,6 +52,7 @@
 
 
 
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1059,6 +1060,7 @@ footer {
         }
     }
 }
+
 
 
 
@@ -3484,6 +3486,12 @@ h4.share {
     display: none;
 }
 
+.product_cat {
+    .p_sort {
+        display: none;
+    }
+}
+
 @media all and (max-width:1500px) {
     .product_cat.fruit {
         #sort_cat .consist .select_consist {
@@ -4019,7 +4027,8 @@ h4.share {
             box-sizing: border-box;
             padding-top: 20px;
             padding-bottom: 20px;
-            font-family: 'Open Sans',sans-serif; 
+            font-family: 'Open Sans', sans-serif;
+            display: block;
         }
     }
     .wrp_bread {
@@ -4053,6 +4062,18 @@ h4.share {
         padding-right: 0;
     }
     .product_cat #sort_cat {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: -80px;
+            left: -7%;
+            right: 0;
+            width: 100vw;
+            height: 135%;
+            background: #f7f8fa;
+            z-index: -1;
+        }
         .consist {
             margin-left: 0;
             .reset_all {
