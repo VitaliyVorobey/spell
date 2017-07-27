@@ -217,6 +217,8 @@ $('.p_sort').click(function(){$(this).next().toggle()});
 });
 jQuery(document).ready(function($){
 $('.dropbtn').click(function(){$(this).next().toggle()});
+$('.dropbtn').click(function(){$(this).next().toggleClass("active")});
+$('.dropbtn').click(function(){$(this).toggleClass("active")});
 });
 
 
