@@ -4533,14 +4533,37 @@ h4.share {
                 &:nth-child(1) {
                     display: none;
                 }
+                 &.deliver {
+                    td:nth-child(2),td:nth-child(1) {
+                        display: none;
+                        
+                    }
+                    td {
+                        p {
+                            text-align: center!important;
+                            padding-left: 0 !important;
+                            &:before {
+                                display: none!important;
+                            }
+                        }
+                    }
+                    }
                 td {
                     display: block;
                     width: 100%;
                     float: left;
-                    padding:2%;
+                    padding:2%!important;
                     text-align: center; 
+                    h4.sum_text {
+                        text-align: center;
+                        padding-right: 0;
+
+                    }
+
                     ul {
-                        padding: 0;
+                        padding: 0!important;
+                        display: inline-block;
+                        text-align: center;
                     }
                 }
             }
