@@ -3163,6 +3163,10 @@ h4.share {
                     padding-bottom: 20px;
                     vertical-align: top;
                     text-align: left;
+                    &.mob {
+                        display: none;
+
+                    }
                     &:nth-child(1n+2) {
                         padding-left: 24px;
                     }
@@ -4532,7 +4536,8 @@ h4.share {
             tr {
                 &:nth-child(1) {
                     display: none;
-                }
+
+                }                
                  &.deliver {
                     td:nth-child(2),td:nth-child(1) {
                         display: none;
@@ -4548,6 +4553,12 @@ h4.share {
                         }
                     }
                     }
+                    &.name_item {
+                        td.mob {
+                            border-top: none;
+                        }
+                    }
+
                 td {
                     display: block;
                     width: 100%;
@@ -4558,6 +4569,10 @@ h4.share {
                         text-align: center;
                         padding-right: 0;
 
+                    }
+                    &.mob {
+                        display: block;
+                        border-top: 1px solid #d7d7d7;                        
                     }
 
                     ul {
@@ -4572,6 +4587,9 @@ h4.share {
     .bas_page table.order_table {
         tbody {
             tr {
+                &:nth-child(2) td {
+                   border-bottom: none; 
+                }
                 td {
                     display: block;
                     width: 100%;
