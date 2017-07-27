@@ -213,9 +213,12 @@ $('.d_menu_body').hide();
 $('.btn_d_menu').click(function(){$(this).next().toggle()});
 });
 jQuery(document).ready(function($){
-$('#sort_cat').hide();
 $('.p_sort').click(function(){$(this).next().toggle()});
 });
+jQuery(document).ready(function($){
+$('.dropbtn').click(function(){$(this).next().toggle()});
+});
+
 
 
 document.getElementById("foreBtn").addEventListener("click", foreFunction);

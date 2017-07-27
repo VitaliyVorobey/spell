@@ -53,6 +53,7 @@
 
 
 
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1115,6 +1116,7 @@ footer {
 
 
 
+
 /*-------------------- Мои стили-------------------------------*/
 
 .twb-tabs .fade {
@@ -1153,7 +1155,7 @@ span.rs {
     &:after {
         content: "";
         position: absolute;
-        top: 8px;
+        top: 9px;
         left: 4px;
         color: #fff;
         width: 10px;
@@ -1163,7 +1165,7 @@ span.rs {
     &:before {
         content: "";
         position: absolute;
-        top: 8px;
+        top: 9px;
         left: 4px;
         color: #fff;
         width: 10px;
@@ -1535,22 +1537,7 @@ span.rs {
                 }
                 .dl_h {
                     position: relative;
-                    width: 100%;
-                    &:hover {
-                        .dropbtn {
-                            border-top: 1px solid #d7d7d7;
-                            border-left: 1px solid #d7d7d7;
-                            border-right: 1px solid #d7d7d7;
-                            z-index: 6;
-                        }
-                        .drop_content {
-                            display: block;
-                            border-top: 1px solid #d7d7d7;
-                            border-left: 1px solid #d7d7d7;
-                            border-right: 1px solid #d7d7d7;
-                            border-bottom: 1px solid #d7d7d7;
-                        }
-                    }
+                    width: 100%;                
                     .drop_content {
                         display: none;
                         position: absolute;
@@ -3491,7 +3478,22 @@ h4.share {
         display: none;
     }
 }
+@media all and (min-width:768px) {
+    .product_cat #sort_cat .consist .select_consist .dl_h:hover .dropbtn {
+    border-top: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    z-index: 6;
+}
+.product_cat #sort_cat .consist .select_consist .dl_h:hover .drop_content {
+    display: block;
+    border-top: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+}
 
+}
 @media all and (max-width:1500px) {
     .product_cat.fruit {
         #sort_cat .consist .select_consist {
@@ -3980,6 +3982,9 @@ h4.share {
 
 
 @media all and (max-width:768px) {
+    .prod_list .product_la .f_hover .des_hover {
+        height: 90%;
+    }
     .cat_baner {
         display: none;
     }
@@ -4032,7 +4037,7 @@ h4.share {
             line-height: 14px;
             &.pi {
                 width: 80%;
-                background: #574581; 
+                background: #574581;
                 color: #fff;
                 height: 38px;
                 padding: 0;
@@ -4074,6 +4079,7 @@ h4.share {
     }
     .product_cat #sort_cat {
         position: relative;
+        display: none;
         &:after {
             content: "";
             position: absolute;
@@ -4099,7 +4105,7 @@ h4.share {
                 margin-right: 0;
                 position: relative;
                 .dl_h {
-                    border: 1px solid #d7d7d7;
+                    
                     margin-bottom: 10px;
                     &:hover {
                         border-color: #fff;
@@ -4588,7 +4594,8 @@ h4.share {
             width: 20%;
             height: 50px;
             background-color: #f7f8fa;
-            background: url("/catalog/view/theme/default/image/mob_menu.svg") no-repeat;
+            /*background: url("/catalog/view/theme/default/image/mob_menu.svg") no-repeat;*/
+            background: url("mob_menu.svg") no-repeat;
             background-position: 0 0;
             cursor: pointer;
             position: absolute;
