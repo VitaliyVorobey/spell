@@ -58,6 +58,7 @@
 
 
 
+
 /*--- CSS Reset ---*/
 
 header,
@@ -1065,6 +1066,7 @@ footer {
         }
     }
 }
+
 
 
 
@@ -3505,6 +3507,24 @@ h4.share {
         border-right: 1px solid #d7d7d7;
         border-bottom: 1px solid #d7d7d7;
     }
+    .bas_page table.order_table tr:nth-child(1) td label input {
+        &::-webkit-input-placeholder {
+            /* WebKit browsers */
+            color: transparent;
+        }
+        &:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: transparent;
+        }
+        &::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: transparent;
+        }
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10+ */
+            color: transparent;
+        }
+    }
 }
 
 @media all and (max-width:1500px) {
@@ -4358,6 +4378,10 @@ h4.share {
             p {
                 text-align: center;
             }
+            input {
+                width: 100%;
+                margin-top: 20px;
+            }
         }
     }
     .finish_block {
@@ -4622,6 +4646,9 @@ h4.share {
             }
         }
     }
+    .bas_page:before {
+        display: none;
+    }
     .bas_page table.bas_table {
         tbody {
             tr {
@@ -4633,9 +4660,12 @@ h4.share {
                     td:nth-child(1) {
                         display: none;
                     }
+                    td:nth-last-child(1) {
+                        border: none;
+                    }
                     td {
                         p {
-                            text-align: center!important;
+                            text-align: left !important;
                             padding-left: 0 !important;
                             &:before {
                                 display: none!important;
@@ -4647,6 +4677,11 @@ h4.share {
                     td.mob {
                         border-top: none;
                     }
+                    .compos {
+                        ul {
+                            display: block;
+                        }
+                    }
                 }
 
                 td {
@@ -4655,20 +4690,47 @@ h4.share {
                     float: left;
                     padding: 2%!important;
                     text-align: center;
+                    .line_block {
+                        position: relative;
+                        .t_away {
+                            position: absolute;
+                            bottom: 100%;
+                            right: 0;
+                        }
+                        .name_cand {
+                            padding: 0;
+                        }
+                    }
+                    .img_wrap {
+                        float: left;
+                        width: 35%;
+                    }
+                    ul.first_ul {
+                        float: left;
+                        width: 65%;
+                        padding: 20px 0 0 0; 
+                    } 
                     h4.sum_text {
                         text-align: center;
-                        padding-right: 0;
+                        padding: 15px 0;
+                        line-height: 16px;
                     }
                     &.mob {
                         display: block;
-                        border-top: 1px solid #d7d7d7;
+                        width: 50%;
+                        float: left;
+                        text-align: left;
+                        line-height: 1;
+                       
+                    }
+                    &.fo_amo, &.price_td {
+                        width: 50%;
+                        float: left;
+                        text-align: right;
+
                     }
 
-                    ul {
-                        padding: 0!important;
-                        display: inline-block;
-                        text-align: center;
-                    }
+                    
                 }
             }
         }
@@ -4676,8 +4738,21 @@ h4.share {
     .bas_page table.order_table {
         tbody {
             tr {
-                &:nth-child(2) td {
+                &:nth-child(2) td:nth-child(1) {
                     border-bottom: none;
+                    
+                }
+                &:nth-child(1) {
+                    td {
+                        label {
+                        position: relative;
+                        input {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                    }
                 }
                 td {
                     display: block;
@@ -4686,6 +4761,7 @@ h4.share {
                     padding: 2%;
                     box-sizing: border-box;
                 }
+
             }
         }
     }
